@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <e:Skin class="gamePlayingSkinSkin" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
 	<w:Config id="16371d3abbe" ></w:Config>
-	<e:Image id="startBg" source="bg_png" left="0" right="0" top="0" bottom="0"/>
+	<e:Image id="startBg" source="bg_png" width="640" height="1136" y="0" x="0"/>
 	<e:Image id="roadblock" source="startLine_png" x="108" y="523" anchorOffsetX="0" width="425"/>
 	<e:Image id="hero" source="hero_png" x="396.05" y="609.37"/>
 	<e:Image id="carLight" source="carLight_png" x="391.05" y="569.09"/>
 	<e:Image id="distanceBg" source="roadnum2_png" x="449.55" y="22.89" anchorOffsetX="0" width="189" anchorOffsetY="0" height="142.11"/>
 	<e:Image id="timeBg" source="timenum2_png" x="0" y="31" anchorOffsetX="0" width="230.78" anchorOffsetY="0" height="134"/>
-	<e:Image id="startBg1" source="bg_png" bottom="1136" anchorOffsetX="0" width="640" height="1136" x="-1.45"/>
+	<e:Image id="startBg1" source="bg_png" bottom="1136" anchorOffsetX="0" width="640" height="1136" x="0"/>
 	<e:BitmapLabel id="distanceNum" width="108" height="42" x="455.55" y="76" anchorOffsetX="0" anchorOffsetY="0" scaleX="1.21" font="roadnum_fnt" text="0"/>
-	<e:BitmapLabel width="147" height="39" x="90" y="70" anchorOffsetX="0" anchorOffsetY="0" font="timenum_fnt" text="0&quot;"/>
+	<e:BitmapLabel id="timeNum" width="147" height="39" x="90" y="70" anchorOffsetX="0" anchorOffsetY="0" font="timenum_fnt" text="0&quot;"/>
 </e:Skin>

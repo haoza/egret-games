@@ -44,7 +44,6 @@ module game {
             this.addEventListener(SceneEvent.ChangeScene,this.onChangeScene,this);
         }
         private onChangeScene(e: SceneEvent) {
-            console.log(1)
             //移除所有子对象
             this.removeChildren();
              
