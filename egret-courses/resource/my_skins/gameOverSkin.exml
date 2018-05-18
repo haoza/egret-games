@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="gameOverSkinSkin" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="16371f25a58" ></w:Config>
+	<e:Button id="resertBtn" label="" x="230.61" y="825.8" anchorOffsetX="0" width="178.79" anchorOffsetY="0" height="90.91">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="playAgainBtn_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Group width="507.57" height="507.57" x="66.22" y="212.11" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Image source="succeededNotice_png" x="166.28" y="197.28"/>
+	</e:Group>
+</e:Skin>

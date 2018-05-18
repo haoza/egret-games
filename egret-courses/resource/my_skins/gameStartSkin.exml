@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="gameStartSkin" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="startBg" source="bg_png" left="0" right="0" top="0" bottom="0"/>
+	<e:Image id="roadblock" source="startLine_png" x="108" y="523" anchorOffsetX="0" width="425"/>
+	<e:Button id="startBtn" label="" x="177.1" y="878.3" scaleX="2.26" scaleY="1.48" anchorOffsetX="0" width="126.9" anchorOffsetY="0" height="64.59">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="startGameBtn_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Image id="hero" source="hero_png" x="396.05" y="601.72"/>
+	<e:Image id="carLight" source="carLight_png" x="391.05" y="561.44"/>
+</e:Skin>

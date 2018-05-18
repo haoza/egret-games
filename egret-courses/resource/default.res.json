@@ -1,0 +1,389 @@
+{
+	"groups": [
+		{
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,bg_png,car0_png,car1_png,car2_png,carLight_png,failedNotice_png,hero_png,heroDied_png,heroProtected_png,heroSlow_png,noticeBg_png,playAgainBtn_png,roadblock_png,roadnum_png,roadnumber0_png,roadnumber1_png,roadnumber2_png,roadnumber3_png,roadnumber4_png,roadnumber5_png,roadnumber6_png,roadnumber7_png,roadnumber8_png,roadnumber9_png,roadnum2_png,startGameBtn_png,startLine_png,startnum1_png,startnum2_png,startnum3_png,succeededNotice_png,succeededrotation_png,timenum_png,timenumber0_png,timenumber1_png,timenumber11_png,timenumber2_png,timenumber3_png,timenumber4_png,timenumber5_png,timenumber6_png,timenumber7_png,timenumber8_png,timenumber9_png,timenum2_png,timenum_fnt,roadnum_fnt",
+			"name": "preload"
+		},
+		{
+			"keys": "loadingBg_png,loadingCar_png",
+			"name": "loading"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/CheckBox/checkbox_select_disabled.png",
+			"type": "image",
+			"name": "checkbox_select_disabled_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_down.png",
+			"type": "image",
+			"name": "checkbox_select_down_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_up.png",
+			"type": "image",
+			"name": "checkbox_select_up_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_unselect.png",
+			"type": "image",
+			"name": "checkbox_unselect_png"
+		},
+		{
+			"url": "assets/ItemRenderer/selected.png",
+			"type": "image",
+			"name": "selected_png"
+		},
+		{
+			"url": "assets/Panel/border.png",
+			"type": "image",
+			"name": "border_png"
+		},
+		{
+			"url": "assets/Panel/header.png",
+			"type": "image",
+			"name": "header_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_disabled.png",
+			"type": "image",
+			"name": "radiobutton_select_disabled_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_down.png",
+			"type": "image",
+			"name": "radiobutton_select_down_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_up.png",
+			"type": "image",
+			"name": "radiobutton_select_up_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_unselect.png",
+			"type": "image",
+			"name": "radiobutton_unselect_png"
+		},
+		{
+			"url": "assets/ScrollBar/roundthumb.png",
+			"type": "image",
+			"name": "roundthumb_png"
+		},
+		{
+			"url": "assets/Slider/thumb.png",
+			"type": "image",
+			"name": "thumb_png"
+		},
+		{
+			"url": "assets/Slider/track.png",
+			"type": "image",
+			"name": "track_png"
+		},
+		{
+			"url": "assets/Slider/tracklight.png",
+			"type": "image",
+			"name": "tracklight_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/handle.png",
+			"type": "image",
+			"name": "handle_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/off.png",
+			"type": "image",
+			"name": "off_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/on.png",
+			"type": "image",
+			"name": "on_png"
+		},
+		{
+			"url": "assets/Button/button_down.png",
+			"type": "image",
+			"name": "button_down_png"
+		},
+		{
+			"url": "assets/Button/button_up.png",
+			"type": "image",
+			"name": "button_up_png"
+		},
+		{
+			"url": "assets/ProgressBar/thumb_pb.png",
+			"type": "image",
+			"name": "thumb_pb_png"
+		},
+		{
+			"url": "assets/ProgressBar/track_pb.png",
+			"type": "image",
+			"name": "track_pb_png"
+		},
+		{
+			"url": "assets/ScrollBar/track_sb.png",
+			"type": "image",
+			"name": "track_sb_png"
+		},
+		{
+			"url": "assets/bg.jpg",
+			"type": "image",
+			"name": "bg_jpg"
+		},
+		{
+			"url": "assets/egret_icon.png",
+			"type": "image",
+			"name": "egret_icon_png"
+		},
+		{
+			"url": "config/description.json",
+			"type": "json",
+			"name": "description_json"
+		},
+		{
+			"url": "my_resource/bg.png",
+			"type": "image",
+			"name": "bg_png"
+		},
+		{
+			"url": "my_resource/car0.png",
+			"type": "image",
+			"name": "car0_png"
+		},
+		{
+			"url": "my_resource/car1.png",
+			"type": "image",
+			"name": "car1_png"
+		},
+		{
+			"url": "my_resource/car2.png",
+			"type": "image",
+			"name": "car2_png"
+		},
+		{
+			"url": "my_resource/carLight.png",
+			"type": "image",
+			"name": "carLight_png"
+		},
+		{
+			"url": "my_resource/failedNotice.png",
+			"type": "image",
+			"name": "failedNotice_png"
+		},
+		{
+			"url": "my_resource/hero.png",
+			"type": "image",
+			"name": "hero_png"
+		},
+		{
+			"url": "my_resource/heroDied.png",
+			"type": "image",
+			"name": "heroDied_png"
+		},
+		{
+			"url": "my_resource/heroProtected.png",
+			"type": "image",
+			"name": "heroProtected_png"
+		},
+		{
+			"url": "my_resource/heroSlow.png",
+			"type": "image",
+			"name": "heroSlow_png"
+		},
+		{
+			"url": "my_resource/loadingBg.png",
+			"type": "image",
+			"name": "loadingBg_png"
+		},
+		{
+			"url": "my_resource/loadingCar.png",
+			"type": "image",
+			"name": "loadingCar_png"
+		},
+		{
+			"url": "my_resource/noticeBg.png",
+			"type": "image",
+			"name": "noticeBg_png"
+		},
+		{
+			"url": "my_resource/playAgainBtn.png",
+			"type": "image",
+			"name": "playAgainBtn_png"
+		},
+		{
+			"url": "my_resource/roadblock.png",
+			"type": "image",
+			"name": "roadblock_png"
+		},
+		{
+			"url": "my_resource/roadnum/roadnum.png",
+			"type": "image",
+			"name": "roadnum_png"
+		},
+		{
+			"url": "my_resource/roadnum/roadnumber0.png",
+			"type": "image",
+			"name": "roadnumber0_png"
+		},
+		{
+			"url": "my_resource/roadnum/roadnumber1.png",
+			"type": "image",
+			"name": "roadnumber1_png"
+		},
+		{
+			"url": "my_resource/roadnum/roadnumber2.png",
+			"type": "image",
+			"name": "roadnumber2_png"
+		},
+		{
+			"url": "my_resource/roadnum/roadnumber3.png",
+			"type": "image",
+			"name": "roadnumber3_png"
+		},
+		{
+			"url": "my_resource/roadnum/roadnumber4.png",
+			"type": "image",
+			"name": "roadnumber4_png"
+		},
+		{
+			"url": "my_resource/roadnum/roadnumber5.png",
+			"type": "image",
+			"name": "roadnumber5_png"
+		},
+		{
+			"url": "my_resource/roadnum/roadnumber6.png",
+			"type": "image",
+			"name": "roadnumber6_png"
+		},
+		{
+			"url": "my_resource/roadnum/roadnumber7.png",
+			"type": "image",
+			"name": "roadnumber7_png"
+		},
+		{
+			"url": "my_resource/roadnum/roadnumber8.png",
+			"type": "image",
+			"name": "roadnumber8_png"
+		},
+		{
+			"url": "my_resource/roadnum/roadnumber9.png",
+			"type": "image",
+			"name": "roadnumber9_png"
+		},
+		{
+			"url": "my_resource/roadnum.png",
+			"type": "image",
+			"name": "roadnum2_png"
+		},
+		{
+			"url": "my_resource/startGameBtn.png",
+			"type": "image",
+			"name": "startGameBtn_png"
+		},
+		{
+			"url": "my_resource/startLine.png",
+			"type": "image",
+			"name": "startLine_png"
+		},
+		{
+			"url": "my_resource/startnum1.png",
+			"type": "image",
+			"name": "startnum1_png"
+		},
+		{
+			"url": "my_resource/startnum2.png",
+			"type": "image",
+			"name": "startnum2_png"
+		},
+		{
+			"url": "my_resource/startnum3.png",
+			"type": "image",
+			"name": "startnum3_png"
+		},
+		{
+			"url": "my_resource/succeededNotice.png",
+			"type": "image",
+			"name": "succeededNotice_png"
+		},
+		{
+			"url": "my_resource/succeededrotation.png",
+			"type": "image",
+			"name": "succeededrotation_png"
+		},
+		{
+			"url": "my_resource/timenum/timenum.png",
+			"type": "image",
+			"name": "timenum_png"
+		},
+		{
+			"url": "my_resource/timenum/timenumber0.png",
+			"type": "image",
+			"name": "timenumber0_png"
+		},
+		{
+			"url": "my_resource/timenum/timenumber1.png",
+			"type": "image",
+			"name": "timenumber1_png"
+		},
+		{
+			"url": "my_resource/timenum/timenumber11.png",
+			"type": "image",
+			"name": "timenumber11_png"
+		},
+		{
+			"url": "my_resource/timenum/timenumber2.png",
+			"type": "image",
+			"name": "timenumber2_png"
+		},
+		{
+			"url": "my_resource/timenum/timenumber3.png",
+			"type": "image",
+			"name": "timenumber3_png"
+		},
+		{
+			"url": "my_resource/timenum/timenumber4.png",
+			"type": "image",
+			"name": "timenumber4_png"
+		},
+		{
+			"url": "my_resource/timenum/timenumber5.png",
+			"type": "image",
+			"name": "timenumber5_png"
+		},
+		{
+			"url": "my_resource/timenum/timenumber6.png",
+			"type": "image",
+			"name": "timenumber6_png"
+		},
+		{
+			"url": "my_resource/timenum/timenumber7.png",
+			"type": "image",
+			"name": "timenumber7_png"
+		},
+		{
+			"url": "my_resource/timenum/timenumber8.png",
+			"type": "image",
+			"name": "timenumber8_png"
+		},
+		{
+			"url": "my_resource/timenum/timenumber9.png",
+			"type": "image",
+			"name": "timenumber9_png"
+		},
+		{
+			"url": "my_resource/timenum.png",
+			"type": "image",
+			"name": "timenum2_png"
+		},
+		{
+			"name": "timenum_fnt",
+			"type": "font",
+			"url": "my_resource/timenum/timenum.fnt"
+		},
+		{
+			"name": "roadnum_fnt",
+			"type": "font",
+			"url": "my_resource/roadnum/roadnum.fnt"
+		}
+	]
+}
