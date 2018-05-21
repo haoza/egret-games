@@ -35,14 +35,17 @@ class LoadingUI extends eui.Component {
 
     }
 
-    public loadingText:eui.Label;
-    public loadingGroup:eui.Group;
-    
-    
-    public setProgress(current:number, total:number):void {
-        const num:number = Math.floor(current/total * 100);
-        const posX:number =  (423 -128) * num / 100;
-        this.loadingGroup.x = 105 + posX;
-        this.loadingText.text = `${num}%`;
+    public loadingText: eui.Label;
+    public loadingGroup: eui.Group;
+
+
+    public setProgress(current: number, total: number): void {
+        const num: number = Math.floor(current / total * 100);
+        const posX: number = (423 - 128) * num / 100;
+        if (this.loadingGroup) {
+            this.loadingGroup.x = 105 + posX;
+            this.loadingText.text = `${num}%`;
+        }
+
     }
 }

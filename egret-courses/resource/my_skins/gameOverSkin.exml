@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="gameOverSkinSkin" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+<e:Skin class="gameOverSkin" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" >
+	<w:Declarations>
+	</w:Declarations>
 	<w:Config id="16371f25a58" ></w:Config>
+	<e:Image source="bg_png" left="0" right="0" top="0" bottom="0"/>
 	<e:Button id="resertBtn" label="" x="230.61" y="825.8" anchorOffsetX="0" width="178.79" anchorOffsetY="0" height="90.91">
 		<e:skinName>
 			<e:Skin states="up,down,disabled">
@@ -10,6 +13,8 @@
 		</e:skinName>
 	</e:Button>
 	<e:Group width="507.57" height="507.57" x="66.22" y="212.11" anchorOffsetX="0" anchorOffsetY="0">
-		<e:Image source="succeededNotice_png" x="166.28" y="197.28"/>
+		<e:Image source="noticeBg_png" left="0" right="0" top="0" bottom="0"/>
+		<e:Image id="fail" source="succeededNotice_png" x="166.28" y="197.28"/>
+		<e:Image id="success" source="failedNotice_png" x="164.39" y="197.28"/>
 	</e:Group>
 </e:Skin>

@@ -15,5 +15,10 @@
     "eui.ItemRenderer": "resource/eui_skins/ItemRendererSkin.exml"
   },
   "autoGenerateExmlsList": true,
-  "exmls": []
+  "exmls": [
+    "resource/my_skins/gameOverSkin.exml",
+    "resource/my_skins/gamePlayingSkin.exml",
+    "resource/my_skins/gameStartSkin.exml",
+    "resource/my_skins/loadingUISkin.exml"
+  ]
 }

@@ -75,7 +75,7 @@ class Main extends eui.UILayer {
         RES.addEventListener(RES.ResourceEvent.GROUP_LOAD_ERROR, this.onResourceLoadError, this);
         RES.addEventListener(RES.ResourceEvent.GROUP_PROGRESS, this.onResourceProgress, this);
         RES.addEventListener(RES.ResourceEvent.ITEM_LOAD_ERROR, this.onItemLoadError, this);
-        RES.loadGroup("loading");
+      
     }
     private isThemeLoadEnd: boolean = false;
     /**
@@ -83,6 +83,7 @@ class Main extends eui.UILayer {
      * Loading of theme configuration file is complete, start to pre-load the 
      */
     private onThemeLoadComplete(): void {
+        RES.loadGroup("loading");
         this.isThemeLoadEnd = true;
         this.createScene();
     }
