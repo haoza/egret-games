@@ -16,6 +16,7 @@
 		"bin-debug/game/gamePlayingSkin.js",
 		"bin-debug/game/GameStart.js",
 		"bin-debug/game/SceneEvent.js",
-		"bin-debug/game/ViewManager.js"
+		"bin-debug/game/ViewManager.js",
+		"bin-debug/util/util.js"
 	]
 }

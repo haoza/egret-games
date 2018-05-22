@@ -14,7 +14,7 @@
 	</e:Button>
 	<e:Group width="507.57" height="507.57" x="66.22" y="212.11" anchorOffsetX="0" anchorOffsetY="0">
 		<e:Image source="noticeBg_png" left="0" right="0" top="0" bottom="0"/>
-		<e:Image id="fail" source="succeededNotice_png" x="166.28" y="197.28"/>
-		<e:Image id="success" source="failedNotice_png" x="164.39" y="197.28"/>
+		<e:Image id="success" source="succeededNotice_png" x="166.28" y="197.28"/>
+		<e:Image id="fail" source="failedNotice_png" x="164.39" y="197.28"/>
 	</e:Group>
 </e:Skin>

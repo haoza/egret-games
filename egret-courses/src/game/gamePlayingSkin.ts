@@ -1,5 +1,6 @@
-module game {
 
+
+module game {
 	export class GamePlaying extends eui.Component implements eui.UIComponent {
 
 		private sceneEvent: SceneEvent = new SceneEvent(SceneEvent.ChangeScene);
@@ -38,7 +39,7 @@ module game {
 		private daley: number = 10;
 		// 触摸开始的坐标
 		private startPosX: number;
-
+		private util:Util = new Util();
 		private timer: egret.Timer;
 		protected partAdded(partName: string, instance: any): void {
 			super.partAdded(partName, instance);
@@ -47,7 +48,8 @@ module game {
 		protected childrenCreated(): void {
 			super.childrenCreated();
 			this.addEventListener(egret.TouchEvent.TOUCH_BEGIN, this.tapStart, this);
-			this.addEventListener(egret.TouchEvent.TOUCH_END, this.tapEnd, this);
+			this.addEventListener(egret.TouchEvent.TOUCH_MOVE, this.tapMove, this);
+
 			this.sceneEvent.eventType = SceneEvent.GAME_END;
 			this.sceneEvent.eventObj = this;
 
@@ -64,13 +66,13 @@ module game {
 			this.startPosX = event.stageX;
 		}
 
-		private tapEnd(event: egret.TouchEvent) {
+		private tapMove(event: egret.TouchEvent) {
 			const distance = event.stageX - this.startPosX;
 			if (distance > 120) {
 				console.log('右滑')
 				if (this.heroGroup.x !== 406) {
 					var tw = egret.Tween.get(this.heroGroup);
-					tw.to({ x: 406 }, 500 - this.daley * 10);
+					tw.to({ x: 406 }, 300 - this.daley * 14);
 
 				}
 			}
@@ -78,7 +80,7 @@ module game {
 				console.log('左滑')
 				if (this.heroGroup.x !== 150) {
 					var tw = egret.Tween.get(this.heroGroup);
-					tw.to({ x: 150 }, 500 - this.daley * 10);
+					tw.to({ x: 150 }, 300 - this.daley * 14 * 1.4);
 				}
 
 			}
@@ -87,31 +89,49 @@ module game {
 		private carArr: Array<any> = new Array();
 		private createdCar(i: number = 0): void {
 			const carimg = new egret.Bitmap();
-
+			if (Math.random() > 0.5) {
+				carimg.x = 150;
+			}
+			else {
+				carimg.x = 430;
+			}
 			carimg.texture = RES.getRes(`car${i}_png`);
-			carimg.x = 150;
+
 			carimg.y = 0;
 			this.addChild(carimg);
 			this.carArr.push(carimg);
+			console.log("生成汽车")
 		}
 
 		// 初始化游戏
 		public initPalying() {
-			this.daley = 10;
+			this.daley = 5;
 			this.bgGroup.y = 0;
-			this.heroGroup.y = 576.66;
+			this.heroGroup.y = 707.66;
+			this.heroGroup.x = 406;
 			this.roadblock.y = 523;
 
 			this.timeNum.text = '0"';
 			this.distanceNum.text = '0';
+
+
+			for (var i = this.carArr.length - 1; i >= 0; i--) {
+				let item = this.carArr[i];
+				// 删除数组中的元素
+				this.carArr.splice(i, 1);
+				// 从显示列表移除
+				this.removeChild(item);
+			}
+
+
 			// 重新计时
 			this.timer.reset();
+			this.timer.start();
 		}
 
 
 		// 计时器
 		protected timerFunc(): void {
-
 			this.bgGroup.y += this.daley;
 			this.gameTimeNum += this.time;
 			this.distance += this.daley;
@@ -134,17 +154,20 @@ module game {
 					this.carArr.splice(i, 1);
 					// 从显示列表移除
 					this.removeChild(item);
+					continue;
 				}
 
-				const isLeftHit: boolean = this.heroGroup.hitTestPoint(item.x, item.y + item.height);
-				const isRightHit: boolean = this.heroGroup.hitTestPoint(item.x + item.width, item.y + item.height);
-
-				if (isLeftHit || isRightHit) {
+				console.log(this.carArr.length)
+	
+				if (this.util.boundHit(this.heroGroup, item)) {
+					console.log(this.heroGroup, item)
 					// 已经碰撞
-					ViewManager.getInstance().gameOver.is_gameover = false;
+					this.timer.stop();
+					ViewManager.getInstance().gameOver.is_gameover = true;
 					ViewManager.getInstance().dispatchEvent(this.sceneEvent);
 					// 结束循环
-					break;
+
+					return;
 				}
 			}
 
@@ -155,9 +178,9 @@ module game {
 			}
 
 			// 随机创建
-			const isCreateCar = Math.floor(Math.random() * 1000)
+			const isCreateCar = Math.floor(Math.random() * 100 * 60)
 			if (isCreateCar < this.daley) {
-				this.createdCar(Math.ceil(Math.random() * 3))
+				this.createdCar(Math.floor(Math.random() * 3))
 			}
 
 
@@ -171,7 +194,7 @@ module game {
 			if (this.roadblock.y > 1065) {
 				this.roadblock.y = 1065;
 			}
-			if (this.daley < 30) {
+			if (this.daley < 20) {
 				this.daley += 0.05;
 			}
 		}

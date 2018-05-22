@@ -1,7 +1,7 @@
 
 module game {
 	export class GameOver extends eui.Component implements eui.UIComponent {
-
+		private sceneEvent: SceneEvent = new SceneEvent(SceneEvent.ChangeScene);
 
 		public constructor() {
 			super();
@@ -12,17 +12,17 @@ module game {
 		public success: eui.Image;
 
 
-		protected partAdded(partName: string, instance: any): void {
-			super.partAdded(partName, instance);
-		}
-
 
 		protected childrenCreated(): void {
 			super.childrenCreated();
-			// this.resertBtn.addEventListener(egret.TouchEvent.TOUCH_END)
-			// ViewManager.getInstance().gamePlaying.initPalying();
+			this.resertBtn.addEventListener(egret.TouchEvent.TOUCH_END, this.clickResertBtn, this);
+			this.sceneEvent.eventObj = this;
+			this.sceneEvent.eventType = SceneEvent.GAME_PLAYING;
 		}
-
+		private clickResertBtn(): void {
+			ViewManager.getInstance().gamePlaying.initPalying();
+			ViewManager.getInstance().dispatchEvent(this.sceneEvent);
+		}
 		public set is_gameover(val) {
 			if (val) {
 				this.resertBtn.visible = true;

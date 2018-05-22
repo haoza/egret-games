@@ -15,7 +15,7 @@
 
 	<e:BitmapLabel id="distanceNum" width="170" height="42" x="459.55" y="76" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" font="roadnum_fnt" text="0" touchEnabled="false" letterSpacing="1"/>
 	<e:BitmapLabel id="timeNum" width="300" height="40" x="-34" y="79" anchorOffsetX="0" anchorOffsetY="0" font="timenum_fnt" text="0&quot;" scaleX="0.8" scaleY="0.8" textAlign="right" letterSpacing="0"/>
-	<e:Group id="heroGroup" width="80.67" height="200" x="406" y="576.66" anchorOffsetX="0">
+	<e:Group id="heroGroup" width="80.67" height="200" x="406" y="707.66" anchorOffsetX="0">
 
 		<e:Image id="carLight" source="carLight_png" x="-4" y="0" scaleX="1" scaleY="1"/>
 		<e:Image id="hero" source="hero_png" x="0" y="35.98" scaleX="1" scaleY="1"/>
